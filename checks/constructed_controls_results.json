@@ -1,0 +1,113 @@
+{
+  "threshold": 0.12006248373242992,
+  "synthetic": {
+    "linear_cooling": {
+      "original": {
+        "score": 3.1094527363184086,
+        "boundary": 3.1094527363184095,
+        "interior": -3.197442310920451e-16,
+        "interior_integral": -3.167836363597115e-16,
+        "window": 201,
+        "gate": 600,
+        "duration": 59.900000000000006,
+        "decision": "ACTIVE"
+      },
+      "normalized": {
+        "score": -1.2156942119645464e-14,
+        "boundary": -2.7478019859472624e-15,
+        "interior": -9.39100649096266e-15,
+        "interior_integral": -9.36732173310399e-15,
+        "window": 201,
+        "gate": 600,
+        "duration": 59.900000000000006,
+        "decision": "INACTIVE"
+      },
+      "strictly_decreasing": true,
+      "y_start": 50.0,
+      "y_end": 25.0
+    },
+    "exponential_cooling": {
+      "original": {
+        "score": 1.786628963221297,
+        "boundary": 2.0462334043933184,
+        "interior": -0.2596044411720211,
+        "interior_integral": -0.2580876400779378,
+        "window": 201,
+        "gate": 362,
+        "duration": 59.900000000000006,
+        "decision": "ACTIVE"
+      },
+      "normalized": {
+        "score": 0.20486050446569326,
+        "boundary": 0.4644649456377186,
+        "interior": -0.25960444117202536,
+        "interior_integral": -0.258087640077942,
+        "window": 201,
+        "gate": 362,
+        "duration": 59.900000000000006,
+        "decision": "ACTIVE"
+      },
+      "strictly_decreasing": true,
+      "y_start": 50.0,
+      "y_end": 25.032171325657913
+    },
+    "concave_quadratic_cooling": {
+      "original": {
+        "score": 1.996282207814649,
+        "boundary": 1.8398971611979684,
+        "interior": 0.15638504661668068,
+        "interior_integral": 0.15599408400013898,
+        "window": 201,
+        "gate": 564,
+        "duration": 59.900000000000006,
+        "decision": "ACTIVE"
+      },
+      "normalized": {
+        "score": -0.10555100335717921,
+        "boundary": -0.2619360499738504,
+        "interior": 0.15638504661667119,
+        "interior_integral": 0.1559940840001295,
+        "window": 201,
+        "gate": 564,
+        "duration": 59.900000000000006,
+        "decision": "INACTIVE"
+      },
+      "strictly_decreasing": true,
+      "y_start": 50.0,
+      "y_end": 25.0
+    },
+    "constant_temperature": {
+      "original": {
+        "score": 0.0,
+        "boundary": 0.0,
+        "interior": 0.0,
+        "interior_integral": 0.0,
+        "window": 201,
+        "gate": 0,
+        "duration": 59.900000000000006,
+        "decision": "INACTIVE"
+      },
+      "normalized": {
+        "score": 0.0,
+        "boundary": 0.0,
+        "interior": 0.0,
+        "interior_integral": 0.0,
+        "window": 201,
+        "gate": 0,
+        "duration": 59.900000000000006,
+        "decision": "INACTIVE"
+      },
+      "strictly_decreasing": false,
+      "y_start": 26.0,
+      "y_end": 26.0
+    }
+  },
+  "analytic_interior_quadratic": {
+    "b": 0.00696765059183224,
+    "mu2_s2": 33.66666666666667,
+    "score": 0.1559940840001375,
+    "threshold_exceeded": true
+  },
+  "original_records": {},
+  "source_provenance": "Synthetic only"
+}

@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use these materials, cite the associated MRTOE research record."
+title: "MRTOE: Finite-window thermal-activity criterion verification"
+authors:
+  - family-names: "Mouawad"
+    given-names: "Meshaal Obaid"
+url: "https://doi.org/10.5281/zenodo.20683004"

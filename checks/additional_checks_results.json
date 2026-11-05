@@ -1,0 +1,121 @@
+{
+  "description": "Read-only mathematical checks; original measured records are checked by verify_revision.py.",
+  "parameters": {
+    "n": 600,
+    "dt_seconds": 0.1,
+    "tau_seconds": 60.0,
+    "epsilon_C_per_second": 0.05,
+    "k_numeric": 0.31,
+    "threshold": 0.12006248373242992
+  },
+  "offset_checks": {
+    "linear": {
+      "n": 600,
+      "window": 201,
+      "half_window": 100,
+      "original_score": 3.1094527363184086,
+      "normalized_full_score": -1.2156942119645464e-14,
+      "normalized_interior_score": -9.36732173310399e-15,
+      "interior_gate_all_active": true,
+      "strictly_decreasing": true,
+      "offset_delta_direct": 0.4145936981757883,
+      "offset_delta_identity": 0.4145936981757893,
+      "offset_identity_error": 9.992007221626409e-16
+    },
+    "exponential": {
+      "n": 600,
+      "window": 201,
+      "half_window": 100,
+      "original_score": 1.786628963221297,
+      "normalized_full_score": 0.20486050446569326,
+      "normalized_interior_score": -0.258087640077942,
+      "interior_gate_all_active": false,
+      "strictly_decreasing": true,
+      "offset_delta_direct": 0.20729684908789325,
+      "offset_delta_identity": 0.20729684908789475,
+      "offset_identity_error": 1.4988010832439613e-15
+    },
+    "quadratic": {
+      "n": 600,
+      "window": 201,
+      "half_window": 100,
+      "original_score": 1.996282207814649,
+      "normalized_full_score": -0.10555100335717921,
+      "normalized_interior_score": 0.1559940840001295,
+      "interior_gate_all_active": true,
+      "strictly_decreasing": true,
+      "offset_delta_direct": 0.2935323383084567,
+      "offset_delta_identity": 0.2935323383084592,
+      "offset_identity_error": 2.4980018054066022e-15
+    },
+    "constant": {
+      "n": 600,
+      "window": 201,
+      "half_window": 100,
+      "original_score": 0.0,
+      "normalized_full_score": 0.0,
+      "normalized_interior_score": 0.0,
+      "interior_gate_all_active": false,
+      "strictly_decreasing": false,
+      "offset_delta_direct": 0.0,
+      "offset_delta_identity": 0.0,
+      "offset_identity_error": 0.0
+    }
+  },
+  "quadratic_family": {
+    "mu2_seconds_squared": 33.66666666666668,
+    "interior_duration_seconds": 39.900000000000006,
+    "gate_curvature_bound_C_per_second_squared": 0.0025,
+    "score_curvature_bound_C_per_second_squared": 0.005362725395627032,
+    "sufficient_joint_bound_C_per_second_squared": 0.005362725395627032,
+    "condition": "b > max(epsilon/(2*t_p), tau*M_c/(mu2*L)); p>=1; L>0; t_i=i*dt",
+    "cases": {
+      "gate_pass_score_below_1": {
+        "b_C_per_second_squared": 0.003,
+        "analytic_interior_score": 0.06716500000000004,
+        "computed_interior_score": 0.06716499999999095,
+        "interior_above_threshold": false,
+        "strictly_decreasing": true,
+        "interior_gate_all_active": true,
+        "normalized_full_score": -0.057058500000012016
+      },
+      "gate_pass_score_below_2": {
+        "b_C_per_second_squared": 0.005,
+        "analytic_interior_score": 0.11194166666666673,
+        "computed_interior_score": 0.11194166666665735,
+        "interior_above_threshold": false,
+        "strictly_decreasing": true,
+        "interior_gate_all_active": true,
+        "normalized_full_score": -0.08196701388890061
+      },
+      "just_below_score_boundary": {
+        "b_C_per_second_squared": 0.005362189123087469,
+        "analytic_interior_score": 0.12005047748405669,
+        "computed_interior_score": 0.12005047748404724,
+        "interior_above_threshold": false,
+        "strictly_decreasing": true,
+        "interior_gate_all_active": true,
+        "normalized_full_score": -0.08610911619729732
+      },
+      "just_above_score_boundary": {
+        "b_C_per_second_squared": 0.005363261668166594,
+        "analytic_interior_score": 0.12007448998080315,
+        "computed_interior_score": 0.12007448998079483,
+        "interior_above_threshold": true,
+        "strictly_decreasing": true,
+        "interior_gate_all_active": true,
+        "normalized_full_score": -0.08612633974288966
+      },
+      "original_quadratic_control": {
+        "b_C_per_second_squared": 0.00696765059183224,
+        "analytic_interior_score": 0.15599408400013756,
+        "computed_interior_score": 0.15599408400012954,
+        "interior_above_threshold": true,
+        "strictly_decreasing": true,
+        "interior_gate_all_active": true,
+        "normalized_full_score": -0.10555100335717915
+      }
+    }
+  },
+  "status": "PASS"
+}
