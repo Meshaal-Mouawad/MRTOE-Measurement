@@ -14,3 +14,13 @@ raw_data/
 *.png
 *.jpeg
 *.jpg
+
+# Private research and submission administration
+*PRIVATE*
+*private*
+*MARC*
+*FLIR*
+*.zip
+SUBMISSION_FILES/Title_Page.docx
+SUBMISSION_FILES/AUTHOR_FORM_ENTRIES.txt
+SUBMISSION_FILES/Cover_Letter*
